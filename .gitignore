@@ -1,0 +1,48 @@
+# Arquivos do Sistema Operacional
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Arquivos de Editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Node modules (se usar Node.js no futuro)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Arquivos de Build
+dist/
+build/
+
+# Arquivos de Ambiente
+.env
+.env.local
+.env.*.local
+
+# Arquivos Temporários
+*.tmp
+*.temp
+.cache/
+
+# Logs
+*.log
+logs/
+
+# Arquivos de Teste
+coverage/
+.nyc_output/
+
+# Dependências do Python (se usar)
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+venv/
+env/
+
