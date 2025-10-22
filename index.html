@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDY Turismo - Réveillon 2026</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <img src="images/logo.jpg" alt="EDY Turismo Logo" class="logo">
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#info">Informações</a></li>
+                    <li><a href="#reserva">Reservar</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="images/edyt(1).png" alt="Réveillon 2026" class="hero-image">
+            <h1>Réveillon 2026</h1>
+            <p>Bate e Volta para Ilhéus ou Itacaré</p>
+            <p class="subtitle">Saindo de Jequié-BA</p>
+        </div>
+    </section>
+
+    <!-- Informações da Viagem -->
+    <section id="info" class="info-section">
+        <div class="container">
+            <h2>Informações da Viagem</h2>
+            
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>📅 Data</h3>
+                    <p><strong>Saída:</strong> 31/12/2025 (Quarta-feira)</p>
+                    <p><strong>Retorno:</strong> 01/01/2026 (Quinta-feira)</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>🕐 Horários</h3>
+                    <p><strong>Saída:</strong> 15h30 - 16h30</p>
+                    <p><strong>Retorno:</strong> 17h00</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>📍 Locais de Embarque</h3>
+                    <p><strong>Posto Badica:</strong> 15h30</p>
+                    <p><strong>Posto Jequiezinho:</strong> 16h15</p>
+                </div>
+            </div>
+
+            <div class="info-section-full">
+                <h3>🎉 O Pacote Inclui:</h3>
+                <ul class="package-list">
+                    <li>✓ Veículo confortável e seguro para ida e volta</li>
+                    <li>✓ Sorteio de 4 PIX de R$ 100,00 (2 por carro)</li>
+                    <li>✓ Festa pública a noite toda no local</li>
+                    <li>✓ Show pirotécnico na praia (00h00)</li>
+                    <li>✓ Dia 1º de janeiro na praia</li>
+                </ul>
+            </div>
+
+            <div class="pricing-section">
+                <h3>💰 Valores dos Lotes</h3>
+                <div class="pricing-grid">
+                    <div class="price-card">
+                        <h4>1º Lote</h4>
+                        <p class="date">01/10/25 - 31/10/25</p>
+                        <p class="price">R$ 120,00</p>
+                        <p class="casadinha">Casadinha: R$ 260,00</p>
+                    </div>
+                    <div class="price-card">
+                        <h4>2º Lote</h4>
+                        <p class="date">01/11/25 - 30/11/25</p>
+                        <p class="price">R$ 130,00</p>
+                        <p class="casadinha">Casadinha: R$ 260,00</p>
+                    </div>
+                    <div class="price-card">
+                        <h4>3º Lote</h4>
+                        <p class="date">01/12/25 - 15/12/25</p>
+                        <p class="price">R$ 140,00</p>
+                        <p class="casadinha">Casadinha: R$ 270,00</p>
+                    </div>
+                    <div class="price-card">
+                        <h4>4º Lote</h4>
+                        <p class="date">16/12/25 - 31/12/25</p>
+                        <p class="price">R$ 150,00</p>
+                        <p class="casadinha">Casadinha: R$ 280,00</p>
+                    </div>
+                </div>
+                <p class="price-note">Valores em Dinheiro ou PIX. Cartão com taxa adicional.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulário de Reserva -->
+    <section id="reserva" class="reservation-section">
+        <div class="container">
+            <h2>Faça sua Reserva</h2>
+            <form id="reservationForm" class="reservation-form">
+                <div class="form-group">
+                    <label for="name">Nome Completo *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Telefone/WhatsApp *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="ticketType">Tipo de Passagem *</label>
+                    <select id="ticketType" name="ticketType" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="individual">Individual</option>
+                        <option value="casadinha">Casadinha (Casal)</option>
+                    </select>
+                </div>
+
+                <!-- Campos adicionais para Casadinha -->
+                <div id="casadinhaFields" class="casadinha-fields" style="display: none;">
+                    <h3>Dados da Casadinha</h3>
+                    <div class="form-group">
+                        <label for="partner1Name">Nome da Pessoa 1 *</label>
+                        <input type="text" id="partner1Name" name="partner1Name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="partner1Phone">Telefone/WhatsApp da Pessoa 1 *</label>
+                        <input type="tel" id="partner1Phone" name="partner1Phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="partner2Name">Nome da Pessoa 2 *</label>
+                        <input type="text" id="partner2Name" name="partner2Name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="partner2Phone">Telefone/WhatsApp da Pessoa 2 *</label>
+                        <input type="tel" id="partner2Phone" name="partner2Phone">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="embarkPoint">Local de Embarque *</label>
+                    <select id="embarkPoint" name="embarkPoint" required>
+                        <option value="">Selecione um local</option>
+                        <option value="badica">Posto Badica (15h30)</option>
+                        <option value="jequiezinho">Posto Jequiezinho (16h15)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="destination">Destino *</label>
+                    <select id="destination" name="destination" required>
+                        <option value="">Selecione um destino</option>
+                        <option value="ilheus">Ilhéus</option>
+                        <option value="itacare">Itacaré</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="paymentMethod">Forma de Pagamento *</label>
+                    <select id="paymentMethod" name="paymentMethod" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="dinheiro">Dinheiro</option>
+                        <option value="pix">PIX</option>
+                        <option value="cartao">Cartão (com taxa)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="observations">Observações</label>
+                    <textarea id="observations" name="observations" rows="4"></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Enviar Reserva</button>
+            </form>
+
+            <div id="successMessage" class="success-message" style="display: none;">
+                <h3>✓ Reserva Enviada com Sucesso!</h3>
+                <p>Obrigado por sua reserva! Em breve entraremos em contato para confirmar os detalhes.</p>
+                <button type="button" class="btn-new-reservation" onclick="resetForm()">Fazer Nova Reserva</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="contact-section">
+        <div class="container">
+            <h2>Contato</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>📱 WhatsApp</h3>
+                    <p><strong>EDY SANTOS</strong></p>
+                    <p>73 98838-3692</p>
+                    <a href="https://wa.me/5573988383692" target="_blank" class="btn-contact">Chamar no WhatsApp</a>
+                </div>
+
+                <div class="contact-item">
+                    <h3>💬 Grupo WhatsApp</h3>
+                    <p>Receba atualizações e informações sobre a viagem</p>
+                    <a href="https://chat.whatsapp.com/LCIdngOkFPQACoNZeP74DA?mode=ems_copy_t" target="_blank" class="btn-contact">Entrar no Grupo</a>
+                </div>
+
+                <div class="contact-item">
+                    <h3>📧 Email</h3>
+                    <p>edyturismo@gmail.com</p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>📘 Facebook</h3>
+                    <p>edysantos</p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>📸 Instagram</h3>
+                    <p>@edy.turismo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 EDY Turismo. Viajar com EDY TURISMO é conforto, segurança e muita diversão garantida!</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
